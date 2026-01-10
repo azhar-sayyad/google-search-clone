@@ -1,22 +1,103 @@
 .home {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
+
 .home_header {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 30px;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    align-items: center;
 }
+
 .home_header a {
-  margin-right: 20px;
-  text-decoration: inherit;
-  color: rgba(0, 0, 0, 0.85);
-  font-size: 15px;
+    margin-right: 20px;
+    text-decoration: inherit;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 15px;
 }
+
 .home_header a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
+}
+
+.home_headerRight {
+    display: flex;
+    align-items: center;
+    min-width: 13vw;
+    justify-content: space-between;
+}
+
+.home_headerRight>.MuiSvgIcon-root {
+    margin-right: 20px;
+}
+
+.home_body {
+    flex: 1;
+    display: flex;
+    margin-top: 10%;
+    flex-direction: column;
+}
+
+.home_body>img {
+    object-fit: contain;
+    height: 100px;
+}
+
+.search_input {
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgrey;
+    border-radius: 999px;
+    height: 30px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    width: 75vw;
+    margin-top: 40px;
+    max-width: 560px;
+}
+
+.search_input>input {
+    flex: 1;
+    padding: 10px 20px;
+    font-size: medium;
+    border: none;
+}
+
+.search_input>input:focus {
+    outline-width: 0;
+}
+
+.searchIcon {
+    color: gray;
+}
+
+.search_button {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.search_button button {
+    margin: 5px;
+    padding: 7px 16px;
+    background-color: #f8f8f8;
+    border: 1px solid white;
+    text-transform: inherit;
+    color: #5f6368;
+}
+
+.search_button button :hover {
+    box-shadow: 0px 1px rgba(0, 0, 0, 0.1);
+    background-image: -webkit-linear-gradient(top, #f8f8f8, #f1f2f1);
+    background-color: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    color: #222;
+}
+
+.search_buttonHidden {
+    display: none importent;
 }
 .home_headerRight {
   display: flex;
