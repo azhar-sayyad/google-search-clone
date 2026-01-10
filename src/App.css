@@ -99,3 +99,68 @@
 .search_buttonHidden {
     display: none importent;
 }
+.home_headerRight {
+  display: flex;
+  align-items: center;
+  min-width: 13vw;
+  justify-content: space-between;
+}
+.home_headerRight > .MuiSvgIcon-root {
+  margin-right: 20px;
+}
+.home_body {
+  flex: 1;
+  display: flex;
+  margin-top: 10%;
+  flex-direction: column;
+}
+.home_body > img {
+  object-fit: contain;
+  height: 100px;
+}
+.search_input {
+  display: flex;
+  align-items: center;
+  border: 1px solid lightgrey;
+  border-radius: 999px;
+  height: 30px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  width: 75vw;
+  margin-top: 40px;
+  max-width: 560px;
+}
+.search_input > input {
+  flex: 1;
+  padding: 10px 20px;
+  font-size: medium;
+  border: none;
+}
+.search_input > input:focus {
+  outline-width: 0;
+}
+.searchIcon {
+  color: gray;
+}
+.search_btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.search_btn button {
+  margin: 5px;
+  padding: 7px 15px;
+  background-color: #f8f8f8;
+  border: 1px solid white;
+  text-transform: inherit;
+  color: #5f6368;
+}
+.search_btn button:hover {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  background-color: #f8f8f8;
+  color: #222;
+  background-image: -webkit-linear-gradient(top, #f8f8f8, #f1f1f1);
+}
+.search_btnHidden {
+  display: none !important;
+}
